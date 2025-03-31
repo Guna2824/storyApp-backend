@@ -9,6 +9,7 @@ const storySchema = new mongoose.Schema({
     author : {
         type : String,
         required : true,
+        uppercase : true,
     },
     varient : {
         type : String,
@@ -29,4 +30,4 @@ const storySchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('story', storySchema);
+module.exports = mongoose.model('storydata', storySchema);
